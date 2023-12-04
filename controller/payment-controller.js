@@ -56,7 +56,7 @@ export const paymentResponse = (request, response) => {
                 post_res.on('end', function () {
                     let result = JSON.parse(res);
                     console.log(result);
-                    response.redirect(`https://flipkart-clone-backend-4htx.onrender.com`)
+                    response.redirect(`https://flipkart-clone-backend-4htx.onrender.com/`)
                 });
             });
             post_req.write(post_data);
